@@ -6,8 +6,7 @@ spec:
   selector:
     app: vpromq01
   ports:
-    - name: dns
-      port: 5672
-      protocol: TCP
-      targetPort: vpromq-port
+  - port: 5672
+    protocol: TCP
+    targetPort: vpromq-port     
   type: ClusterIP

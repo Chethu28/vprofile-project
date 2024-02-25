@@ -6,7 +6,7 @@ spec:
   selector:
     app: vproapp
   ports:
-    - protocol: TCP
-      port: 8080
-      targetPort: vproapp-port 
+  - protocol: TCP
+    port: 8080
+    targetPort: vproapp-port 
   type: LoadBalancer

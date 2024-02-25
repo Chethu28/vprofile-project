@@ -6,9 +6,8 @@ spec:
   selector:
     app: vprodb
   ports:
-    - name: dns
-      port: 3306
-      protocol: TCP
-      targetPort: vprodb-port
+  - port: 3306
+    protocol: TCP
+    targetPort: vprodb-port     
   type: ClusterIP
 

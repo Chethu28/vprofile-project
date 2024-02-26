@@ -1,5 +1,5 @@
 FROM openjdk:11 AS BUILD
-RUN apt update -y && apt install maven -y 
+RUN apt update -y && apt install maven -y
 COPY ./  vprofile-project/
 RUN cd vprofile-project && mvn clean package 
 
